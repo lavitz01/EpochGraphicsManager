@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "clientPath": "C:\\Users\\ChaseVFX\\Pictures\\project epoch wow\\ChromieCraft_3.3.5a",
+  "backupPath": null,
+  "detectedVersion": "Version 3.3",
+  "installedMods": [
+    {
+      "name": "DXVK",
+      "status": "installed",
+      "details": {
+        "version": "2.7.1",
+        "dll": "C:\\Users\\ChaseVFX\\Pictures\\project epoch wow\\ChromieCraft_3.3.5a\\d3d9.dll",
+        "archivePath": "C:\\Users\\ChaseVFX\\Documents\\EpochGraphicsManager\\Downloads\\dxvk-2.7.1.tar.gz",
+        "sha256": "d85ce7c79f57ecd765aaa1b9e7007cb875e6fde9f6d331df799bce73d513ce87"
+      },
+      "updatedAt": "2026-11-06T23:59:22.2309468Z"
+    },
+    {
+      "name": "Profile-GTX1080",
+      "status": "configured",
+      "details": {
+        "resolution": "2560x1440",
+        "refreshHz": 60,
+        "preset": "ReShade-GTX1080.ini"
+      },
+      "updatedAt": "2026-11-07T00:04:15.0471326Z"
+    },
+    {
+      "name": "Profile-RTX4090",
+      "status": "configured",
+      "details": {
+        "resolution": "3840x2160",
+        "refreshHz": 144,
+        "preset": "ReShade-RTX4090.ini"
+      },
+      "updatedAt": "2026-11-07T04:08:10.6963211Z"
+    },
+    {
+      "name": "EpochAuthenticHD",
+      "status": "files-copied",
+      "details": {
+        "names": [
+          "patch-4",
+          "patch-5",
+          "patch-E",
+          "patch-F",
+          "patch-G",
+          "patch-N",
+          "patch-R",
+          "patch-W",
+          "patch-X"
+        ],
+        "mpqCount": 9,
+        "backup": "State\\prewrite\\hd-20261106-200545",
+        "icons": true
+      },
+      "updatedAt": "2026-11-07T04:08:10.8078825Z"
+    },
+    {
+      "name": "ReShade",
+      "status": "d3d9-installed",
+      "details": {
+        "apiHint": "Direct3D 9",
+        "source": "ReShade_Setup_6.8.0.exe -> ReShade32.dll",
+        "preset": "ReShadePreset.ini",
+        "version": "6.8.0"
+      },
+      "updatedAt": "2026-11-07T07:38:02.5765414Z"
+    },
+    {
+      "name": "Lumenveil",
+      "status": "setup-complete",
+      "details": {
+        "liquiddataBytes": 10189440,
+        "lampdataBytes": 3768765
+      },
+      "updatedAt": "2026-11-07T07:38:02.5867941Z"
+    }
+  ],
+  "conflicts": [],
+  "downloadVerification": [
+    {
+      "name": "EpochAuthenticHD",
+      "status": "manual-required",
+      "path": "C:\\Users\\ChaseVFX\\Documents\\EpochGraphicsManager\\Staging\\EpochAuthenticHD",
+      "sha256": "",
+      "detail": "Place extracted MPQs (and optional Icons) into Staging\\EpochAuthenticHD",
+      "updatedAt": "2026-11-06T23:32:35.6186469Z"
+    },
+    {
+      "name": "DXVK-2.7.1",
+      "status": "verified",
+      "path": "C:\\Users\\ChaseVFX\\Documents\\EpochGraphicsManager\\Downloads\\dxvk-2.7.1.tar.gz",
+      "sha256": "d85ce7c79f57ecd765aaa1b9e7007cb875e6fde9f6d331df799bce73d513ce87",
+      "detail": "Documented by EpochAuthenticHD README for Project Epoch.",
+      "updatedAt": "2026-11-06T23:59:21.9033916Z"
+    },
+    {
+      "name": "ReShade",
+      "status": "manual-setup-required",
+      "path": "",
+      "sha256": "",
+      "detail": "https://reshade.me/",
+      "updatedAt": "2026-11-06T23:59:26.4020317Z"
+    },
+    {
+      "name": "Lumenveil",
+      "status": "verified",
+      "path": "C:\\Users\\ChaseVFX\\Documents\\EpochGraphicsManager\\Downloads\\Lumenveil-0.1.1.zip",
+      "sha256": "56bc42d5c5b8776ef42534c4fcf563a44673920a02c9f1dd2cd7bbfbd0bb7bd6",
+      "detail": "Matched sources.json / release digest for 0.1.1",
+      "updatedAt": "2026-11-07T00:00:12.5875808Z"
+    }
+  ],
+  "lastProfile": "RTX4090",
+  "dllApproval": true,
+  "updatedAtUtc": "2026-11-07T07:38:02.5936147Z"
+}

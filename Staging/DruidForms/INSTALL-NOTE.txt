@@ -1,0 +1,8 @@
+Leeviathan Cohesive Druid Forms (WotLK / 3.3.5a)
+Installed: 20261108-164913
+Source: wowmodding File1 / MediaFire Leeviathan-s_Cohesive_Druid_Forms_(For_3.3.5a).zip
+Archive MPQ: patch-L.MPQ
+Client target: patch-H.mpq
+Backup: C:\Users\ChaseVFX\Documents\EpochGraphicsManager\State\prewrite\druidforms-20261108-164913
+Includes Legion bear/cat/moonkin/aquatic + BfA bear updates + custom travel/tree (per author changelog).
+Protected Epoch MPQs untouched. d3d9.dll policy unchanged (off).

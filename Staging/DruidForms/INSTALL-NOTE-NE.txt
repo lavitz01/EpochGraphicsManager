@@ -1,0 +1,9 @@
+Leeviathan Cohesive Druid Forms — OPTIONAL Night Elf / Alliance overlay
+Installed: 20261108-171112
+Source: NIGHTELF_patch-M.MPQ (author letter M — remapped; Epoch owns patch-M)
+Client target: patch-I.mpq (loads after patch-H)
+Affects: Travel Form, Aquatic Form, Tree of Life (Very-Alliance / purple variants)
+Does not replace bear/cat/flight/moonkin from patch-H.
+Backup: C:\Users\ChaseVFX\Documents\EpochGraphicsManager\State\prewrite\druidforms-ne-20261108-171112
+Epoch patch-M left untouched: True
+d3d9.dll present: False

@@ -1,0 +1,7 @@
+Cross-faction forms policy (20261108-171157)
+- patch-H.mpq: main Cohesive Forms (KEEP) — shared Travel/Aquatic/Tree for NE + Tauren
+- patch-I.mpq: Night Elf optional REMOVED — would force Alliance look on all druids
+- Tauren optional: NOT installed — same global override problem
+Author labels these optionals "PICK ONE"; client cannot switch by race without server support.
+Both optional MPQs remain under Staging\DruidForms\extracted\... and this backup.
+Epoch patch-M untouched. d3d9 policy unchanged.

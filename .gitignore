@@ -1,0 +1,29 @@
+# Large staged downloads / extracted packs
+Staging/**/*.mpq
+Staging/**/*.MPQ
+Staging/**/*.zip
+Staging/**/*.7z
+Staging/**/*.tar.gz
+Staging/**/*.exe
+Staging/**/*.dll
+Staging/dxvk-*/
+Staging/ReShade-*/
+Staging/EpochAuthenticHD/
+Staging/Lumenveil-*/
+Staging/Lumenveil-zippath-test/
+Staging/DruidForms/extracted/
+Staging/DruidForms/*.zip
+
+# Runtime / backup state
+State/prewrite/
+Logs/
+Downloads/
+*.log
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+.vscode/
+.idea/

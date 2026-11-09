@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "notes": [
+    "Only verified official download URLs and digests documented by upstream projects are listed here.",
+    "EpochAuthenticHD has no GitHub release assets; the README points to a Google Drive pack that must be staged manually.",
+    "ReShade setup EXE is downloaded for the user but never auto-executed by this manager."
+  ],
+  "epochAuthenticHd": {
+    "name": "EpochAuthenticHD",
+    "readme": "https://github.com/thierbig/EpochAuthenticHD",
+    "manualDownloadUrl": "https://drive.google.com/file/d/1mP0MwN_L3JG6ZsAt6NNkVMI6jCmpR87n/view?usp=sharing",
+    "updatedNote": "UPDATED 11/08/2026 — letters shifted: old D→E, E→F, F→G, M→N because Epoch ships PATCH-D and PATCH-M.",
+    "expectedMpqFiles": [
+      "patch-4.MPQ",
+      "patch-5.MPQ",
+      "patch-E.MPQ",
+      "patch-F.MPQ",
+      "patch-G.MPQ",
+      "patch-N.MPQ",
+      "patch-R.MPQ",
+      "patch-W.MPQ",
+      "patch-X.MPQ"
+    ],
+    "optionalInterfaceFolder": "Icons",
+    "protectedEpochMpqs": [
+      "patch-D.MPQ",
+      "patch-M.MPQ"
+    ],
+    "checksumAvailable": false,
+    "installMode": "manual-stage-then-copy"
+  },
+  "lumenveil": {
+    "name": "Lumenveil",
+    "version": "0.1.1",
+    "tag": "v0.1.1",
+    "readme": "https://github.com/lumenveil/Lumenveil",
+    "installDoc": "https://github.com/lumenveil/Lumenveil/blob/main/docs/INSTALL.md",
+    "zipUrl": "https://github.com/lumenveil/Lumenveil/releases/download/v0.1.1/Lumenveil-0.1.1.zip",
+    "sumsUrl": "https://github.com/lumenveil/Lumenveil/releases/download/v0.1.1/SHA256SUMS.txt",
+    "zipSha256": "56bc42d5c5b8776ef42534c4fcf563a44673920a02c9f1dd2cd7bbfbd0bb7bd6",
+    "dllBased": true,
+    "requiresExplicitApproval": true,
+    "setupScript": "Lumenveil-Setup.cmd",
+    "neverAutoRunSetup": true,
+    "markerFiles": [
+      "version.dll",
+      "CoAVolFog.dll",
+      "CoAVolFog.ini"
+    ],
+    "conflictsWith": [
+      "other version.dll loaders"
+    ]
+  },
+  "dxvk": {
+    "name": "DXVK",
+    "readme": "https://github.com/doitsujin/dxvk",
+    "windowsNote": "WoW 3.3.5a is 32-bit; copy x32\\d3d9.dll next to Wow.exe only.",
+    "defaultVersion": "2.7.1",
+    "versions": {
+      "2.7.1": {
+        "note": "Documented by EpochAuthenticHD README for Project Epoch.",
+        "url": "https://github.com/doitsujin/dxvk/releases/download/v2.7.1/dxvk-2.7.1.tar.gz",
+        "sha256": "d85ce7c79f57ecd765aaa1b9e7007cb875e6fde9f6d331df799bce73d513ce87",
+        "dllRelativePath": "dxvk-2.7.1/x32/d3d9.dll"
+      },
+      "3.1.1": {
+        "note": "Documented by Lumenveil docs/RESHADE.md screenshot route.",
+        "url": "https://github.com/doitsujin/dxvk/releases/download/v3.1.1/dxvk-3.1.1.tar.gz",
+        "sha256": "40565b4a724aadc4433fa4e010b4b23916d9b1f1baeee64e17186db94f54e608",
+        "dllRelativePath": "dxvk-3.1.1/x32/d3d9.dll"
+      }
+    },
+    "dllBased": true,
+    "requiresExplicitApproval": true,
+    "confFile": {
+      "path": "dxvk.conf",
+      "contents": "d3d9.samplerAnisotropy = 16\nd3d9.maxFrameLatency = 1\n"
+    }
+  },
+  "reshade": {
+    "name": "ReShade",
+    "homepage": "https://reshade.me/",
+    "versionNoted": "6.8.0",
+    "downloadPage": "https://reshade.me/",
+    "dllBased": true,
+    "requiresExplicitApproval": true,
+    "neverAutoRunSetup": true,
+    "lumenveilPresetSource": "https://raw.githubusercontent.com/lumenveil/Lumenveil/v0.1.1/extras/reshade/ReShade-Lumenveil.ini",
+    "installNotes": [
+      "With DXVK: choose Vulkan API in ReShade setup for Wow.exe.",
+      "Without DXVK: choose Direct3D 9.",
+      "Effect packages used by the Lumenveil preset: SweetFX by CeeJay.dk and iMMERSE by Marty McFly.",
+      "Depth preprocessor definitions from Lumenveil docs/RESHADE.md must be set in-game."
+    ]
+  },
+  "projectEpoch": {
+    "requiredBuild": "12340",
+    "clientHints": [
+      "Wow.exe",
+      "Project-Epoch.exe",
+      "ClientExtensions.dll",
+      "Data"
+    ],
+    "searchFolderNames": [
+      "epoch_live",
+      "epoch_live_bon",
+      "World of Warcraft"
+    ],
+    "commonRoots": [
+      "Ascension Launcher\\resources\\epoch_live",
+      "Games\\Ascension Launcher\\resources\\epoch_live",
+      "Program Files\\Ascension Launcher\\resources\\epoch_live",
+      "Program Files (x86)\\Ascension Launcher\\resources\\epoch_live"
+    ],
+    "launcherManagedMpqs": [
+      "common.MPQ",
+      "common-2.MPQ",
+      "expansion.MPQ",
+      "lichking.MPQ",
+      "patch.MPQ",
+      "patch-2.MPQ",
+      "patch-3.MPQ",
+      "patch-A.MPQ",
+      "patch-B.MPQ",
+      "patch-C.MPQ",
+      "patch-D.MPQ",
+      "patch-M.MPQ",
+      "patch-Y.MPQ",
+      "patch-Z.MPQ"
+    ],
+    "neverModify": [
+      "Wow.exe",
+      "Project-Epoch.exe",
+      "ClientExtensions.dll"
+    ],
+    "rulesUrl": "https://project-epoch.org/rules.html",
+    "dllPolicyNote": "Project Epoch rules prohibit cheats/hacks/bots and unauthorized third-party software that automates play or provides unfair advantages. DLL-based graphics tools (Lumenveil, DXVK, ReShade) attach to or replace graphics libraries and may conflict with anti-cheat or ToS. Confirm with current Project Epoch staff/rules before enabling them. This manager never enables DLL stages without explicit approval."
+  }
+}
